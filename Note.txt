@@ -1,0 +1,33 @@
+-> source .venv/bin/activate
+
+-> mkdir -p dir_name
+    -p = Create missing parent directories if needed
+
+->One useful detail: the browser receives the generated HTML, not the Python source code or
+ the template file itself.
+
+->what python actually does 
+Suppose your database contains these fake accounts
+Username: alice, bob
+password: stored password hash, same
+
+- when alice tries to log in the process looks like this:
+     ->HTML form : Alice submits her credentials
+     |
+     ->Flask + python : Recieves the submitted data and runs the login logic.
+     |
+     ->SQLite database : Provides the account needed for verification.
+     |
+     ->Flask decides the result : Creates an authenticated session or rejects the login.
+
+5. The simplest way to remember it
+Component	Main responsibility
+HTML:	Structure of the webpage
+CSS:	Appearance of the webpage
+JavaScript:	Browser-side behavior
+Python: 	Application logic
+Flask:  	Routes requests to Python functions and returns responses
+SQLite: 	Stores and retrieves persistent data
+These components work together; none of them replaces all the others.
+
+->Now saving this foundation work to my github.
