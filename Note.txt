@@ -36,3 +36,11 @@ SQLite : stores and retrieves user records.
 Password hashing : stores a derived hash instead of the original password.
 salt : makes password hashes unique, even when users choose the same password.
 parameterized SQL: helps prevent SQL injection in your database query.
+
+-> What are the imporatant parts?
+- GET displays the registration page.
+- POST process the submitted username and password.
+- secrets.token_bytes(16) generates a new random salt.
+- hashlib.scrypt() hashes the password.
+- INSERT INTO users saves the account.
+- Your database's UNIQUE constraint prevents duplicate usernames.
