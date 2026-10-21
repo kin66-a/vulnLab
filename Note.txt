@@ -22,12 +22,17 @@ password: stored password hash, same
 
 5. The simplest way to remember it
 Component	Main responsibility
-HTML:	Structure of the webpage
-CSS:	Appearance of the webpage
-JavaScript:	Browser-side behavior
-Python: 	Application logic
-Flask:  	Routes requests to Python functions and returns responses
-SQLite: 	Stores and retrieves persistent data
+HTML:	        Structure of the webpage
+CSS:	        Appearance of the webpage
+JavaScript:	    Browser-side behavior
+Python: 	    Application logic
+Flask:  	    Routes requests to Python functions and returns responses
+SQLite: 	    Stores and retrieves persistent data
 These components work together; none of them replaces all the others.
 
-->Now saving this foundation work to my github.
+-> You understand several important concepts now:
+Flask : receives the login form.
+SQLite : stores and retrieves user records.
+Password hashing : stores a derived hash instead of the original password.
+salt : makes password hashes unique, even when users choose the same password.
+parameterized SQL: helps prevent SQL injection in your database query.
